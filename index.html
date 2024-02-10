@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+        <meta meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Shreesh Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href ="/index.html">Home</a></li>
+                        <li><a href ="/index.html#about">About</a></li>
+                        <li><a href ="/index.html#Services">Services</a></li>
+                        <li><a href ="#">Portfolio</a></li>
+                        <li><a href ="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                      <p>Student- Junior</p>
+                      <h1> Hi I'm <span>Shreesh Rajopdhyay </span><br>Studying in University Of Toledo</h1>
+
+                </div>
+            </div>
+        </div>
+        <!-------------about----------->
+        <div id="about">
+            <div class="container">
+            <div class="row">
+            <div class="about-col-1">
+            <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+        <h1 class="sub-title">About me</h1>
+        <p>
+            As an aspiring professional seeking my internship, I bring a passion for Computer science Industry, a strong foundation in [key skills or academic background], and an eagerness to contribute and learn in a dynamic team environment.</p>
+    
+
+<div class="tab-titles"></div>
+<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+</div>
+<div class="tab-contents active-tab" id="skills">
+<ul>
+    <li><span>UI?UX</span><br>Designing Web page</li>
+    
+    <li><span>Web Development</span><br>Designing Web page</li>
+
+    <li><span>App development</span><br>Designing Web page</li>
+</ul>
+</div>
+<div class="tab-contents" id="experience"></div>
+<ul>
+    <li><span>2022-current</span><br>Studying in University of toledo</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+</ul>
+</div>
+<div class="tab-contents" id="education"></div>
+<ul>
+    <li><span>2022-current</span><br>Studying in University of toledo</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+    <li><span>2019-2021</span><br>paxi lekhxu</li>
+</ul>
+</div>
+
+        </div>
+        </div>
+    </div>
+    <!---------services----------->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">Interests</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Passionate and creative web designer with hands-on experience in high school web development projects. Proficient in utilizing HTML, CSS, and JavaScript to design visually appealing and user-friendly websites. Adept at planning and organizing content, implementing responsive design, and ensuring an optimal user experience. Strong attention to detail and a commitment to staying updated on industry trends. Excited to bring a combination of technical skills and creativity to contribute to impactful web design projects.</p>
+                <a href="#">learn more</a>
+                </div>
+                <div>
+                <h2>Networking</h2>
+                    <p>Networking is what i can think of as my backup if web development does not works, for this i have been learning about protocols all kind of important networking protocols which are not available in our course, so that i can get those extra preks.</p>
+                <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------portfolio------------------>
+    <div id="portfolio">
+        <div class="container"></div>
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png">
+                <div class="layer">
+                    <h3>Social media</h3>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+            </div>
+      <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!---------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"></div>
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane-top"></i>68shreesh@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>5679709036</p>
+                <div class="social-icons"></div>
+                <a href="https://www.facebook.com/shreesh.rajopadhyaya/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://www.instagram.com/shreeshrajopadhyay/?hl=en"><i class="fa-brands fa-instagram"></i></i></a>
+</div>
+<a href="" class="btn btn2">Download Resume</a>
+</div>
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tablink of tabcontents){
+        tabcontents.classList.remove("active-tab");
+        
+    }
+    event.currenttarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+
+    </body>
+</html>
